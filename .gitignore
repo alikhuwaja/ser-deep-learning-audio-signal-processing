@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Conda / virtual env
+.conda/
+.venv/
+venv/
+
+# Raw datasets (we only track CSV indexes, not big audio/video)
+data/raw/
+data/**/AudioWAV/
+data/**/Audio_Speech_Actors_01-24/
+data/**/Audio_Song_Actors_01-24/
+data/**/Video_Speech_Actor_*/
+data/**/Video_Song_Actor_*/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode config
+.vscode/

@@ -1,0 +1,28 @@
+# Core DL stack (PyTorch)
+torch
+torchvision
+torchaudio
+
+# Audio + data
+librosa
+soundfile
+numpy
+pandas
+
+# ML utilities
+scikit-learn
+tqdm
+
+# Plotting / notebooks
+matplotlib
+seaborn
+jupyter
+
+# API for demo
+fastapi
+uvicorn[standard]
+
+# Optional: only if you need mic input
+pyaudio
+
+tensorflow
