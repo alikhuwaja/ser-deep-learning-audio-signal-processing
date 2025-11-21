@@ -1,0 +1,31 @@
+Overall project status:
+
+**COMPLETED WEEK 1 MILESTONES**
+* Datasets indexed, audio preprocessing + log-Mel features working, dataset class ready, Mel-spectrograms plotted for RAVDESS and CREMA-D.
+
+scripts/indexes.py:
+
+* Creates CSV index files for RAVDESS and CREMA-D listing file paths, emotions, and IDs.
+
+config.py:
+
+* Stores paths (project/data/CSV) and main hyperparameters (sample rate, mel settings, batch size, epochs, etc.).
+
+features.py:
+
+* Loads audio at 16 kHz mono, fixes length, and converts it to log-Mel spectrogram features.
+
+dataset.py:
+
+* PyTorch Dataset that reads the CSVs and returns (log-Mel features, emotion label) for each audio file.
+
+scripts/mel_spectogram.py:
+
+* Plots example Mel-spectrograms from RAVDESS and CREMA-D using Librosa + Matplotlib.
+
+
+WHAT NEXT TO DO:
+
+*Week 2 and 3 Milestones
+*After Week 2 and 3 are done, then implements the evaluation matrices week 4
+
