@@ -5,7 +5,7 @@ This repo preprocesses audio into **log-Mel spectrograms**, trains deep models (
 
 ---
 
-## 🎯 Project Goal
+## Project Goal
 Given an input audio clip (speech), classify it into one of the emotion categories:
 
 - `neutral`
@@ -19,7 +19,7 @@ Given an input audio clip (speech), classify it into one of the emotion categori
 
 ---
 
-## 🧠 How It Works (Pipeline)
+## How It Works (Pipeline)
 
 1. **Dataset**
    - Speech emotion datasets (e.g., RAVDESS / CREMA-D or course-provided datasets).
@@ -43,5 +43,27 @@ Given an input audio clip (speech), classify it into one of the emotion categori
 
 ---
 
-## 📁 Repository Structure (Typical)
+## Repository Structure (Typical)
+
+ser-project/
+│
+├── app.py # FastAPI inference server 
+├── requirements.txt
+├── README.md
+│
+├── src/
+│ ├── config.py # sample rate, n_mels, labels, paths
+│ ├── features.py # mel/log-mel extraction utilities
+│ ├── dataset.py # PyTorch Dataset + label mapping
+│ ├── train.py # training loop 
+│ ├── eval.py # evaluation script 
+│ └── models/
+│ ├── crnn.py # CRNN model
+│ └── transformer.py # Transformer model
+│
+├── notebooks/ # experiments / EDA / training notebooks
+├── data/
+│ ├── raw/ # original dataset files
+│ └── processed/ # cached features / splits
+└── checkpoints/ # saved models
 
