@@ -43,7 +43,7 @@ Given an input audio clip (speech), classify it into one of the emotion categori
 
 ---
 
-## Repository Structure (Typical)
+## Repository Structure 
 
 ser-project/
 │
@@ -66,4 +66,5 @@ ser-project/
 │ ├── raw/ # original dataset files
 │ └── processed/ # cached features / splits
 └── checkpoints/ # saved models
+
 
